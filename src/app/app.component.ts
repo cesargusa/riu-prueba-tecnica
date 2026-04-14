@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MainBannerComponent } from './main-banner/main-banner.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [MainBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
