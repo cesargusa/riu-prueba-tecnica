@@ -4,14 +4,17 @@
         <h2 class="font-[400] text-[18px]/[27px] pb-[10px]">Lorem ipsum dolor sit</h2>
     </header>
 
-    <div class="relative">
+    <div class="relative mb-[48px]">
         <div class="absolute inset-y-0  flex items-center py-3 ps-4">
             <img src="/assets/icons/magnifying-icon.svg" alt="" aria-hidden="true" class="w-[16px] h-[16px]">
         </div>
         <div class="">
             <input type="search" class="bg-[#F4F4F5] px-4 w-[420px] h-[40px] rounded-lg">
         </div>
-
+    </div>
+    <!-- Muestro 4 veces el componente de las cards porque son identicos -->
+    <div class="my-8" *ngFor="let _ of [0,1,2,3]">
+        <app-cards-page></app-cards-page>
     </div>
 
 </section>
