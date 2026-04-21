@@ -10,20 +10,10 @@
         </div>
     </div>
 
-    <!-- Muestro 4 veces el componente de las cards porque son identicos en tablet y movil-->
-    <div class="md:grid md:grid-rows-2 md:grid-flow-col lg:hidden">
-        <div class="my-8" *ngFor="let _ of [0,1,2,3]">
-            <app-cards-page></app-cards-page>
-        </div>
-
-    </div>
-    <!-- NO ES LA MEJOR OPCION PORQUE NO ES BUENO RENDERIZAR 2 VECES PERO NO
-     ESTOY SEGURO DE SI TIENE QUE SACAR 4 O 6 -->
-    <!-- Muestro 6 veces el componente de las cards porque son identicos en ordenador -->
-    <div class="md:grid md:grid-rows-2 md:grid-flow-col md:hidden lg:grid">
+    <!-- Muestro 6 veces el componente de las cards porque son identicos en tablet y movil-->
+    <div class="md:grid md:grid-rows-3 md:grid-flow-col lg:grid-rows-2">
         <div class="my-8" *ngFor="let _ of [0,1,2,3,4,5]">
             <app-cards-page></app-cards-page>
         </div>
     </div>
-
 </article>
