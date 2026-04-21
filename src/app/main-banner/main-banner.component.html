@@ -1,11 +1,13 @@
-<article class="py-8 px-5 bg-[#FFFFFF] rounded-[8px] border border-[#E4E4E7] shadow-sm lg:flex w-full lg:w-[1542px] lg:h-[480px]">
+<article
+    class="py-8 px-5 bg-[#FFFFFF] rounded-[8px] border border-[#E4E4E7] shadow-sm lg:flex w-full lg:w-[1542px] lg:h-[480px]">
     <figure class="flex justify-center pb-8">
         <img src="assets/images/image.png" alt="first header image" class="w-full lg:w-[723px] lg:h-[416px]">
     </figure>
     <div class="lg:ms-[42px]  lg:w-[723px] lg:h-[240px]">
         <header class="flex items-center px-2">
             <p>
-                <img src="/assets/icons/calendar-icon.png" alt="calendar icon" class="w-[32px] h-[32px] lg:w-[24px] lg:h-[24px]" aria-hidden="true">
+                <img src="/assets/icons/calendar-icon.png" alt="calendar icon"
+                    class="w-[32px] h-[32px] lg:w-[24px] lg:h-[24px]" aria-hidden="true">
             </p>
             <h2 class="px-2 font-[700]">
                 Lorem ipsum dolor sit amet.
@@ -13,7 +15,7 @@
         </header>
         <p class="px-2 py-4 font-sans font-bold text-[24px]/[28px] tracking-normal">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit </p>
-        <footer class="px-2 text-[#343A40]">
+        <footer class="px-2 text-[#343A40] lg:hidden">
             <a>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
                 Pellentesque
@@ -24,6 +26,22 @@
                 at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci
                 ut diam
                 condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. </a>
+        </footer>
+        <!-- Diferencia entre movil, tablet y desktop, muestro otro texto en desktop 
+         NO ES LA MEJOR FORMA DE HACERLO PERO LO HAGO ASI POR DUDAS DE SI ES ERROR DE
+         DISEÑO O ES QUE TIENE QUE SER ASI. SIN USAR EL TYPESCRIPT Y USANDO SOLO TAILWIND -->
+        <footer class="px-2 text-[#343A40] hidden lg:block">
+            <a>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum
+                eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at
+                sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu
+                eros, eget tempus orci facilisis id.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                et massa mi. Aliquam in hendrerit urna. </a>
         </footer>
         <footer class="flex justify-end mt-4">
             <button class="h-10 px-2 bg-[#E4002B] text-white font-bold rounded-lg flex items-center justify-center">
