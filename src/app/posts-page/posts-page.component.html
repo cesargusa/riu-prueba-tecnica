@@ -1,22 +1,23 @@
 <article>
-    <header>
-        <h1 class="font-[700] text-[30px]/[32px] pb-[24px]">Lorem ipsum dolor sit</h1>
-        <h2 class="font-[400] text-[18px]/[27px] pb-[10px]">Lorem ipsum dolor sit</h2>
-    </header>
+        <h1 class="font-[700] text-[30px]/[32px] md:text-[48px]/[58px] pb-[24px]">Lorem ipsum dolor sit</h1>
+        <div class="md:flex justify-between">
+            <h2 class="font-[400] text-[18px]/[27px] pb-[10px]">Lorem ipsum dolor sit</h2>
 
-    <div class="relative mb-[48px]">
-        <div class="absolute inset-y-0 flex items-center py-3 ps-4">
-            <img src="/assets/icons/magnifying-icon.svg" alt="" aria-hidden="true" class="w-[16px] h-[16px]">
+            <div class="relative mb-[48px]">
+                <div class="absolute inset-y-0 flex items-center py-3 ps-4">
+                    <img src="/assets/icons/magnifying-icon.svg" alt="" aria-hidden="true" class="w-[16px] h-[16px]">
+                </div>
+                    <input type="search" class="bg-[#F4F4F5] px-4 w-[420px] h-[40px] md:w-[300px] md:h-[40px] rounded-lg">
+            </div>
         </div>
-        <div>
-            <input type="search" class="bg-[#F4F4F5] px-4 w-[420px] h-[40px] rounded-lg">
-        </div>
-    </div>
+    
     <!-- Muestro 4 veces el componente de las cards porque son identicos -->
-    <div class="my-8" *ngFor="let _ of [0,1,2,3]">
-        <app-cards-page></app-cards-page>
-    </div>
-        
+     <div class="md:grid md:grid-rows-2 md:grid-flow-col">
+         <div class="my-8" *ngFor="let _ of [0,1,2,3]">
+             <app-cards-page></app-cards-page>
+         </div>
+             
+     </div>
 
 
 </article>
